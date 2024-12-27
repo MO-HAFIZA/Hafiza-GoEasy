@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #16423C;
+  background: #E9EFEC;
+  font-family: "Comic Sans MS";
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.btn{
+  background-color: #9EFFA9;
+  color: black;
+  border: none;
+}
+
+#wel{
+  color: #9EFFA9;
+}
+
+.glow{
+  color: #9EFFA9;
+  text-shadow: 0 0 5px #677768, 0 0 5px #677768, 0 0 10px #677768;
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-color:#9EFFA9;
+  color:#ffffff;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.3); 
+}
+
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.card {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.leaflet-container {
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.btn:hover {
+  border-radius: 16px;
+  background-color: black;
+  color: #9EFFA9;
+  font-weight: 800;
+}
+
+.loginBtn{
+   background-color: "#023047"
+}
+
+
+
+.styled-header {
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #9EFFA9;
+  text-transform: capitalize; 
+  background: linear-gradient(135deg, #16423C, #E9EFEC);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.styled-header:hover {
+  color: black;
+  background: linear-gradient(135deg, #9EFFA9, #677768);
+  transform: scale(1.05);
+}
